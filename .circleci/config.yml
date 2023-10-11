@@ -9,6 +9,7 @@ jobs:
       - image: "cimg/node:14.15"
     steps:
       - node/install
+      - aws-cli/install
       - checkout
       - run:
           name: Front-End Install
